@@ -1,0 +1,56 @@
+<div class="header">
+  <h2 class="title">Flight Edit</h2>
+</div>
+
+@if (flightForm.id().value() !== 0) {
+<form class="flight-form" (ngSubmit)="save()">
+  <div>
+    <mat-form-field appearance="fill" class="w-100p">
+      <mat-label>ID</mat-label>
+      <input matInput [control]="flightForm.id" id="flight-id" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="fill" class="w-100p">
+      <mat-label>From</mat-label>
+      <input matInput [control]="flightForm.from" id="flight-from" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="fill" class="w-100p">
+      <mat-label>To</mat-label>
+      <input matInput [control]="flightForm.to" id="flight-to" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="fill" class="w-100p">
+      <mat-label>Date</mat-label>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        [control]="flightForm.date"
+        id="flight-date"
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-checkbox [control]="flightForm.delayed" id="flight-delayed">
+      Delayed
+    </mat-checkbox>
+  </div>
+
+  <div class="mt-20">
+    <button class="btn btn-default" type="button" (click)="save()">Save</button>
+  </div>
+</form>
+} @if(isPending()) {
+<div class="overlay">
+  <mat-progress-spinner mode="indeterminate" diameter="60">
+  </mat-progress-spinner>
+</div>
+}
