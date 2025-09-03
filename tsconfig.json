@@ -4,7 +4,6 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@angular/forms/signals": ["./src/app/external/signal-forms/index.ts"],
       "@angular-architects/ngrx-toolkit/http-mutation": [
         "./src/app/external/ngrx-toolkit/http-mutation.ts"
       ]
