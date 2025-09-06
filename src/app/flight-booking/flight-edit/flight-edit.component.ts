@@ -4,16 +4,16 @@ import {
   input,
   linkedSignal,
   numberAttribute,
-  signal,
 } from '@angular/core';
 
 import { FlightDetailStore } from '../flight-detail.store';
-import { Control, form, minLength, required } from '@angular/forms/signals';
+import { Control, form } from '@angular/forms/signals';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
-import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { debounceSignal } from '../../shared/debounce-signal';
+import { Flight } from '../../model/flight';
+import { toLocalDateTimeString } from '../../utils/date';
 
 @Component({
   selector: 'app-flight-edit',
@@ -21,7 +21,6 @@ import { debounceSignal } from '../../shared/debounce-signal';
     Control,
     MatDatepickerModule,
     MatInputModule,
-    MatCheckboxModule,
     MatProgressSpinnerModule,
   ],
   templateUrl: './flight-edit.component.html',
@@ -38,7 +37,7 @@ export class FlightEditComponent {
   isPending = debounceSignal(this.store.saveFlightIsPending, 300);
   error = this.store.saveFlightError;
 
-  flight = linkedSignal(() => this.store.flightValue());
+  flight = linkedSignal(() => normalize(this.store.flightValue()));
   flightForm = form(this.flight);
 
   constructor() {
@@ -46,6 +45,14 @@ export class FlightEditComponent {
   }
 
   save(): void {
-    this.store.saveFlight(this.flightForm().value());
+    const current = this.flightForm().value();
+    this.store.saveFlight(current);
+  }
+}
+
+function normalize(flight: Flight): Flight {
+  return {
+    ...flight,
+    date: toLocalDateTimeString(flight.date)
   }
 }

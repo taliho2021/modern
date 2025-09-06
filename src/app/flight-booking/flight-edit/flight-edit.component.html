@@ -4,48 +4,64 @@
 
 @if (flightForm.id().value() !== 0) {
 <form class="flight-form" (ngSubmit)="save()">
-  <div>
-    <mat-form-field appearance="fill" class="w-100p">
-      <mat-label>ID</mat-label>
-      <input matInput [control]="flightForm.id" id="flight-id" />
-    </mat-form-field>
+  <div class="form-group">
+    <label for="flight-id">ID</label>
+    <input
+      class="form-control"
+      [control]="flightForm.id"
+      id="flight-id"
+      name="id"
+    />
   </div>
 
-  <div>
-    <mat-form-field appearance="fill" class="w-100p">
-      <mat-label>From</mat-label>
-      <input matInput [control]="flightForm.from" id="flight-from" />
-    </mat-form-field>
+  <div class="form-group">
+    <label for="flight-from">From</label>
+    <input
+      class="form-control"
+      [control]="flightForm.from"
+      id="flight-from"
+      name="from"
+    />
   </div>
 
-  <div>
-    <mat-form-field appearance="fill" class="w-100p">
-      <mat-label>To</mat-label>
-      <input matInput [control]="flightForm.to" id="flight-to" />
-    </mat-form-field>
+  <div class="form-group">
+    <label for="flight-to">To</label>
+    <input
+      class="form-control"
+      [control]="flightForm.to"
+      id="flight-to"
+      name="to"
+    />
   </div>
 
-  <div>
-    <mat-form-field appearance="fill" class="w-100p">
-      <mat-label>Date</mat-label>
+  <div class="form-group">
+    <label for="flight-date">Date</label>
+    <div class="input-group">
       <input
-        matInput
-        [matDatepicker]="picker"
+        class="form-control"
         [control]="flightForm.date"
         id="flight-date"
+        type="datetime-local"
+        name="date"
       />
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
+    </div>
   </div>
-  <div>
-    <mat-checkbox [control]="flightForm.delayed" id="flight-delayed">
-      Delayed
-    </mat-checkbox>
+
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        [control]="flightForm.delayed"
+        id="flight-delayed"
+        name="delayed"
+      />
+      Delayed</label
+    >
   </div>
 
   <div class="mt-20">
-    <button class="btn btn-default" type="button" (click)="save()">Save</button>
+    <button class="btn btn-default" type="submit">Save</button>
   </div>
 </form>
 } @if(isPending()) {
