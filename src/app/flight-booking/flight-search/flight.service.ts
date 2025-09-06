@@ -6,7 +6,7 @@ import { ConfigService } from '../../shared/config.service';
 import {
   httpMutation,
   HttpMutationOptions,
-} from '@angular-architects/ngrx-toolkit/http-mutation';
+} from '@angular-architects/ngrx-toolkit';
 
 export type MutationSettings<Params, Result> = Omit<
   HttpMutationOptions<Params, Result>,

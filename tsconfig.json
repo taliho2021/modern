@@ -4,9 +4,6 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@angular-architects/ngrx-toolkit/http-mutation": [
-        "./src/app/external/ngrx-toolkit/http-mutation.ts"
-      ]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
