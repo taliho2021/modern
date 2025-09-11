@@ -18,15 +18,18 @@ import { Flight } from '../model/flight';
 
 export const FlightDetailStore = signalStore(
   { providedIn: 'root' },
+  
   withState({
     filter: {
       id: 0,
     },
   }),
+
   withProps(() => ({
     _flightService: inject(FlightService),
     _snackBar: inject(MatSnackBar),
   })),
+
   withResource((store) => ({
     flight: store._flightService.findResourceById(store.filter.id),
   })),

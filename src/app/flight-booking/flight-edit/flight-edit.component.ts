@@ -7,18 +7,20 @@ import {
 } from '@angular/core';
 
 import { FlightDetailStore } from '../flight-detail.store';
-import { Control, form } from '@angular/forms/signals';
+import { Control, form, required, submit } from '@angular/forms/signals';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { debounceSignal } from '../../shared/debounce-signal';
 import { Flight } from '../../model/flight';
 import { toLocalDateTimeString } from '../../utils/date';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-flight-edit',
   imports: [
     Control,
+    JsonPipe,
     MatDatepickerModule,
     MatInputModule,
     MatProgressSpinnerModule,
@@ -38,15 +40,30 @@ export class FlightEditComponent {
   error = this.store.saveFlightError;
 
   flight = linkedSignal(() => normalize(this.store.flightValue()));
-  flightForm = form(this.flight);
+  flightForm = form(this.flight, (schema) => { 
+    required(schema.from);
+    required(schema.to);
+    required(schema.date);
+  });
 
   constructor() {
     this.store.updateFilter(this.id);
   }
 
   save(): void {
-    const current = this.flightForm().value();
-    this.store.saveFlight(current);
+    submit(this.flightForm, async (form) => {
+      const result = await this.store.saveFlight(form().value());
+
+      if (result.status === 'error') {
+        alert(1)
+        return {
+          kind: 'processing_error',
+            // ^^^ try to be more specfic
+          error: result.error,
+        }
+      }
+      return null;
+    });
   }
 }
 

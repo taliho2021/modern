@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Flight, initFlight } from '../../model/flight';
 import { ConfigService } from '../../shared/config.service';
 import {
+  concatOp,
   httpMutation,
   HttpMutationOptions,
 } from '@angular-architects/ngrx-toolkit';
@@ -74,7 +75,7 @@ export class FlightService {
     );
   }
 
-  createSaveMutation(options: MutationSettings<Flight, Flight>) {
+  createSaveMutation(options: Partial<HttpMutationOptions<Flight, Flight>>) {
     return httpMutation({
       ...options,
       request: (flight) => ({
@@ -82,6 +83,7 @@ export class FlightService {
         method: 'POST',
         body: flight,
       }),
+      operator: concatOp
     });
   }
 }
