@@ -55,7 +55,6 @@ export class FlightEditComponent {
       const result = await this.store.saveFlight(form().value());
 
       if (result.status === 'error') {
-        alert(1)
         return {
           kind: 'processing_error',
             // ^^^ try to be more specfic
