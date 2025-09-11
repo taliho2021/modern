@@ -12,10 +12,6 @@
     <ng-content select=".middle"></ng-content>
 
     <p>
-      Delayed:
-      <app-status-toggle [(status)]="item.delayed"> </app-status-toggle>
-    </p>
-    <p>
       @if (!selected) {
       <button (click)="select()" class="btn btn-default">Select</button>
       } @if (selected) {

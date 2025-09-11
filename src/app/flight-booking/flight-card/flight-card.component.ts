@@ -3,12 +3,11 @@ import { MatDialog } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { initFlight } from '../../model/flight';
 import { CityPipe } from '../../shared/city.pipe';
-import { StatusToggleComponent } from '../../shared/status-toggle/status-toggle.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-flight-card',
-  imports: [CommonModule, CityPipe, StatusToggleComponent, RouterLink],
+  imports: [CommonModule, CityPipe, RouterLink],
   templateUrl: './flight-card.component.html',
   styleUrls: ['./flight-card.component.css'],
 })
