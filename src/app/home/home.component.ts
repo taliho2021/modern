@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FlightService } from '../flight-booking/flight-search/flight.service';
 import { mergeOp } from '@angular-architects/ngrx-toolkit';
+import { initAircraft } from '../model/aircraft';
 
 @Component({
   selector: 'app-home',
@@ -33,6 +34,7 @@ export class HomeComponent {
       to: 'Hamburg',
       date: new Date().toISOString(),
       delayed: false,
+      aircraft: initAircraft,
     });
   }
 }

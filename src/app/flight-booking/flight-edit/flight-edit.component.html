@@ -4,8 +4,8 @@
 
 @if (flightForm.id().value() !== 0) {
 
-<!-- Form level errors -->
-<pre>{{ flightForm().errors() | json }}</pre>
+<pre>*** {{ flightForm().errors() | json }}</pre>
+<pre>*** {{ flightForm.aircraft.type().errors | json }}</pre>
 
 <form class="flight-form" (ngSubmit)="save()">
   <div class="form-group">
@@ -66,6 +66,19 @@
       Delayed</label
     >
   </div>
+
+  <fieldset>
+    <legend>Aircraft</legend>
+
+    <div class="form-group">
+      <label for="type">Type:</label>
+      <input id="type" class="form-control" [control]="flightForm.aircraft.type" />
+    </div>
+    <div class="form-group">
+      <label for="registration">Registration:</label>
+      <input id="registration" class="form-control" [control]="flightForm.aircraft.registration" />
+    </div>
+  </fieldset>
 
   <div class="mt-20">
     <button class="btn btn-default" type="button" (click)="save()">Save</button>

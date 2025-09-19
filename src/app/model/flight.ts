@@ -1,9 +1,12 @@
+import { Aircraft, initAircraft } from "./aircraft";
+
 export interface Flight {
   id: number;
   from: string;
   to: string;
   date: string;
   delayed: boolean;
+  aircraft: Aircraft;
 }
 
 export const initFlight: Flight = {
@@ -12,4 +15,5 @@ export const initFlight: Flight = {
   to: '',
   date: '',
   delayed: false,
+  aircraft: initAircraft,
 };

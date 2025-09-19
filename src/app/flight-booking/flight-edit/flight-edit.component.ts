@@ -22,6 +22,7 @@ import {
   customError,
   validateHttp,
   schema,
+  apply,
 } from '@angular/forms/signals';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
@@ -30,8 +31,14 @@ import { debounceSignal } from '../../shared/debounce-signal';
 import { Flight } from '../../model/flight';
 import { toLocalDateTimeString } from '../../utils/date';
 import { JsonPipe } from '@angular/common';
-import { delay, map, Observable, of } from 'rxjs';
+import { delay, map, min, Observable, of } from 'rxjs';
 import { rxResource } from '@angular/core/rxjs-interop';
+import { Aircraft } from 'src/app/model/aircraft';
+
+export const aircraftSchema = schema<Aircraft>((path) => {
+  required(path.registration);
+  required(path.type);
+});
 
 export const flightSchema = schema<Flight>((path) => {
   required(path.from);
@@ -46,7 +53,11 @@ export const flightSchema = schema<Flight>((path) => {
 
   validateRoundTrip(path);
   validateRoundTripTree(path);
+
+  apply(path.aircraft, aircraftSchema);
 });
+
+
 
 @Component({
   selector: 'app-flight-edit',
