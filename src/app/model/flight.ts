@@ -1,4 +1,5 @@
 import { Aircraft, initAircraft } from "./aircraft";
+import { Price } from "./price";
 
 export interface Flight {
   id: number;
@@ -7,6 +8,7 @@ export interface Flight {
   date: string;
   delayed: boolean;
   aircraft: Aircraft;
+  prices: Price[];
 }
 
 export const initFlight: Flight = {
@@ -16,4 +18,5 @@ export const initFlight: Flight = {
   date: '',
   delayed: false,
   aircraft: initAircraft,
+  prices: [],
 };

@@ -4,9 +4,9 @@
 
 @if (flightForm.id().value() !== 0) {
 
-<pre>*** {{ flightForm().errors() | json }}</pre>
+<pre>{{ flightForm().errors() | json }}</pre>
 
-<form class="flight-form" (ngSubmit)="save()">
+<form class="flight-form" novalidate>
   <div class="form-group">
     <label for="flight-id">ID</label>
     <input
@@ -67,19 +67,47 @@
   </div>
 
   <fieldset>
+    <legend>Prices</legend>
+    <table>
+      <tr>
+        <th>Flight Class</th>
+        <th>Amount</th>
+        <th></th>
+      </tr>
+      @for(price of flightForm.prices; track $index) {
+      <tr>
+        <td><input [control]="price.flightClass" class="form-control w-200" /></td>
+        <td><input [control]="price.amount" class="form-control w-100" /></td>
+        <td>
+          Flight Class: {{ price.flightClass().errors() | json }},
+          Amount: {{ price.amount().errors() | json }}
+        </td>
+      </tr>
+      }
+    </table>
+    <button (click)="addPrice()" type="button" class="btn btn-default ml3">Add</button>
+  </fieldset>
+
+  <fieldset>
     <legend>Aircraft</legend>
 
     <div class="form-group">
       <label for="type">Type:</label>
-      <input id="type" class="form-control" [control]="flightForm.aircraft.type" />
+      <input
+        id="type"
+        class="form-control"
+        [control]="flightForm.aircraft.type"
+      />
       <pre>{{ flightForm.aircraft.type().errors() | json }}</pre>
-
     </div>
     <div class="form-group">
       <label for="registration">Registration:</label>
-      <input id="registration" class="form-control" [control]="flightForm.aircraft.registration" />
+      <input
+        id="registration"
+        class="form-control"
+        [control]="flightForm.aircraft.registration"
+      />
       <pre>{{ flightForm.aircraft.registration().errors() | json }}</pre>
-
     </div>
   </fieldset>
 

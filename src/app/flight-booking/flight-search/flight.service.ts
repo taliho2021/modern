@@ -1,6 +1,6 @@
 import { HttpClient, httpResource } from '@angular/common/http';
 import { inject, Injectable, Signal } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Flight, initFlight } from '../../model/flight';
 import { ConfigService } from '../../shared/config.service';
 import {
@@ -8,7 +8,6 @@ import {
   httpMutation,
   HttpMutationOptions,
 } from '@angular-architects/ngrx-toolkit';
-import { rxResource } from '@angular/core/rxjs-interop';
 import { initAircraft } from 'src/app/model/aircraft';
 
 export type MutationSettings<Params, Result> = Omit<
@@ -77,6 +76,7 @@ export class FlightService {
         parse: (raw) => {
           const flight = raw as Flight;
           flight.aircraft = initAircraft;
+          flight.prices = [];
           return flight;
         }
       }

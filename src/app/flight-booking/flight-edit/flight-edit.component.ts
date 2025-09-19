@@ -23,6 +23,8 @@ import {
   validateHttp,
   schema,
   apply,
+  min,
+  applyEach,
 } from '@angular/forms/signals';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
@@ -31,13 +33,20 @@ import { debounceSignal } from '../../shared/debounce-signal';
 import { Flight } from '../../model/flight';
 import { toLocalDateTimeString } from '../../utils/date';
 import { JsonPipe } from '@angular/common';
-import { delay, map, min, Observable, of } from 'rxjs';
+import { delay, map, Observable, of } from 'rxjs';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { Aircraft } from 'src/app/model/aircraft';
+import { initPrice, Price } from 'src/app/model/price';
 
 export const aircraftSchema = schema<Aircraft>((path) => {
   required(path.registration);
   required(path.type);
+});
+
+export const priceSchema = schema<Price>((path) => {
+  required(path.flightClass);
+  required(path.amount);
+  min(path.amount, 0);
 });
 
 export const flightSchema = schema<Flight>((path) => {
@@ -55,6 +64,7 @@ export const flightSchema = schema<Flight>((path) => {
   validateRoundTripTree(path);
 
   apply(path.aircraft, aircraftSchema);
+  applyEach(path.prices, priceSchema);
 });
 
 @Component({
@@ -101,6 +111,13 @@ export class FlightEditComponent {
       }
       return null;
     });
+  }
+
+  addPrice(): void {
+    this.flightForm.prices().value.update(prices => ([
+      ...prices,
+      initPrice
+    ]));
   }
 }
 
