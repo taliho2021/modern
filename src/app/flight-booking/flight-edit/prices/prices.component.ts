@@ -1,0 +1,19 @@
+import { JsonPipe } from '@angular/common';
+import { Component, input } from '@angular/core';
+import { Control, Field } from '@angular/forms/signals';
+import { initPrice, Price } from 'src/app/model/price';
+
+@Component({
+  selector: 'app-prices',
+  imports: [Control, JsonPipe],
+  templateUrl: './prices.component.html',
+  styleUrl: './prices.component.css',
+})
+export class PricesComponent {
+  prices = input.required<Field<Price[]>>();
+
+  addPrice(): void {
+    const pricesForms = this.prices();
+    pricesForms().value.update((prices) => [...prices, { ...initPrice }]);
+  }
+}

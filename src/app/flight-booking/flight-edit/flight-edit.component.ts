@@ -37,6 +37,9 @@ import { delay, map, Observable, of } from 'rxjs';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { Aircraft } from 'src/app/model/aircraft';
 import { initPrice, Price } from 'src/app/model/price';
+import { AircraftComponent } from './aircraft/aircraft.component';
+import { PricesComponent } from "./prices/prices.component";
+import { FlightComponent } from "./flight/flight.component";
 
 export const aircraftSchema = schema<Aircraft>((path) => {
   required(path.registration);
@@ -70,12 +73,14 @@ export const flightSchema = schema<Flight>((path) => {
 @Component({
   selector: 'app-flight-edit',
   imports: [
-    Control,
     JsonPipe,
     MatDatepickerModule,
     MatInputModule,
     MatProgressSpinnerModule,
-  ],
+    AircraftComponent,
+    PricesComponent,
+    FlightComponent
+],
   templateUrl: './flight-edit.component.html',
   styleUrls: ['./flight-edit.component.css'],
 })
@@ -111,13 +116,6 @@ export class FlightEditComponent {
       }
       return null;
     });
-  }
-
-  addPrice(): void {
-    this.flightForm.prices().value.update(prices => ([
-      ...prices,
-      initPrice
-    ]));
   }
 }
 

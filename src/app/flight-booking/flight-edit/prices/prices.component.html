@@ -1,0 +1,27 @@
+@let priceForms = prices();
+
+<fieldset>
+  <legend>Prices</legend>
+  <table>
+    <tr>
+      <th>Flight Class</th>
+      <th>Amount</th>
+      <th></th>
+    </tr>
+    @for(price of priceForms; track $index) {
+    <tr>
+      <td>
+        <input [control]="price.flightClass" class="form-control w-200" />
+      </td>
+      <td><input [control]="price.amount" class="form-control w-100" /></td>
+      <td>
+        Flight Class: {{ price.flightClass().errors() | json }}, Amount:
+        {{ price.amount().errors() | json }}
+      </td>
+    </tr>
+    }
+  </table>
+  <button (click)="addPrice()" type="button" class="btn btn-default ml3">
+    Add
+  </button>
+</fieldset>
