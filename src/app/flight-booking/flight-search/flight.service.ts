@@ -9,6 +9,7 @@ import {
   HttpMutationOptions,
 } from '@angular-architects/ngrx-toolkit';
 import { rxResource } from '@angular/core/rxjs-interop';
+import { initAircraft } from 'src/app/model/aircraft';
 
 export type MutationSettings<Params, Result> = Omit<
   HttpMutationOptions<Params, Result>,
@@ -59,28 +60,7 @@ export class FlightService {
     );
   }
 
-  debug = true;
-
   findResourceById(id: Signal<number>) {
-
-    if (this.debug) {
-      return rxResource({
-        params: () => ({
-          id: id()
-        }),
-        stream: (p) => {
-          const id = p.params.id;
-          return of({
-            id,
-            from: 'here',
-            to: 'there',
-            date: new Date().toISOString(),
-            delayed: true
-          } as Flight);
-        },
-        defaultValue: initFlight,
-      })
-    }
 
     return httpResource<Flight>(
       () =>
@@ -94,6 +74,11 @@ export class FlightService {
             },
       {
         defaultValue: initFlight,
+        parse: (raw) => {
+          const flight = raw as Flight;
+          flight.aircraft = initAircraft;
+          return flight;
+        }
       }
     );
   }

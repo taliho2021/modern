@@ -57,8 +57,6 @@ export const flightSchema = schema<Flight>((path) => {
   apply(path.aircraft, aircraftSchema);
 });
 
-
-
 @Component({
   selector: 'app-flight-edit',
   imports: [
