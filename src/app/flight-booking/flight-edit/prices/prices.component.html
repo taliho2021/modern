@@ -15,8 +15,10 @@
       </td>
       <td><input [control]="price.amount" class="form-control w-100" /></td>
       <td>
-        Flight Class: {{ price.flightClass().errors() | json }}, Amount:
-        {{ price.amount().errors() | json }}
+        <app-validation-errors
+          [errors]="price().errorSummary()"
+          [showFieldNames]="true"
+        ></app-validation-errors>
       </td>
     </tr>
     }

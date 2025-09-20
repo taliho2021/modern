@@ -8,7 +8,6 @@ import {
 
 import { FlightDetailStore } from '../flight-detail.store';
 import {
-  Control,
   FieldPath,
   form,
   minLength,
@@ -36,10 +35,11 @@ import { JsonPipe } from '@angular/common';
 import { delay, map, Observable, of } from 'rxjs';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { Aircraft } from 'src/app/model/aircraft';
-import { initPrice, Price } from 'src/app/model/price';
+import { Price } from 'src/app/model/price';
 import { AircraftComponent } from './aircraft/aircraft.component';
-import { PricesComponent } from "./prices/prices.component";
-import { FlightComponent } from "./flight/flight.component";
+import { PricesComponent } from './prices/prices.component';
+import { FlightComponent } from './flight/flight.component';
+import { ValidationErrorsComponent } from 'src/app/shared/validation-errors/validation-errors.component';
 
 export const aircraftSchema = schema<Aircraft>((path) => {
   required(path.registration);
@@ -53,7 +53,7 @@ export const priceSchema = schema<Price>((path) => {
 });
 
 export const flightSchema = schema<Flight>((path) => {
-  required(path.from);
+  required(path.from, { message: 'Please enter a value!' });
   required(path.to);
   required(path.date);
 
@@ -73,14 +73,14 @@ export const flightSchema = schema<Flight>((path) => {
 @Component({
   selector: 'app-flight-edit',
   imports: [
-    JsonPipe,
     MatDatepickerModule,
     MatInputModule,
     MatProgressSpinnerModule,
     AircraftComponent,
     PricesComponent,
-    FlightComponent
-],
+    FlightComponent,
+    ValidationErrorsComponent,
+  ],
   templateUrl: './flight-edit.component.html',
   styleUrls: ['./flight-edit.component.css'],
 })
@@ -91,7 +91,6 @@ export class FlightEditComponent {
     transform: numberAttribute,
   });
 
-  // TODO: Get from store
   isPending = debounceSignal(this.store.saveFlightIsPending, 300);
   error = this.store.saveFlightError;
 

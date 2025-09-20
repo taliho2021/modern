@@ -1,11 +1,11 @@
-import { JsonPipe } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { Control, Field } from '@angular/forms/signals';
 import { Aircraft } from 'src/app/model/aircraft';
+import { ValidationErrorsComponent } from 'src/app/shared/validation-errors/validation-errors.component';
 
 @Component({
   selector: 'app-aircraft',
-  imports: [Control, JsonPipe],
+  imports: [Control, ValidationErrorsComponent],
   templateUrl: './aircraft.component.html',
   styleUrl: './aircraft.component.css',
 })

@@ -19,7 +19,9 @@
     name="from"
   />
   <!-- Field level errors -->
-  <pre>{{ flightForm.from().errors() | json }}</pre>
+  <app-validation-errors
+    [errors]="flightForm.from().errors()"
+  ></app-validation-errors>
 </div>
 
 <div class="form-group">
@@ -30,7 +32,9 @@
     id="flight-to"
     name="to"
   />
-  <pre>{{ flightForm.from().errors | json }}</pre>
+  <app-validation-errors
+    [errors]="flightForm.from().errors()"
+  ></app-validation-errors>
 </div>
 
 <div class="form-group">
