@@ -77,6 +77,7 @@ export class FlightService {
           const flight = raw as Flight;
           flight.aircraft = initAircraft;
           flight.prices = [];
+          flight.delay = 0;
           return flight;
         }
       }

@@ -24,6 +24,9 @@ import {
   apply,
   min,
   applyEach,
+  applyWhen,
+  applyWhenValue,
+  disabled,
 } from '@angular/forms/signals';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
@@ -52,12 +55,22 @@ export const priceSchema = schema<Price>((path) => {
   min(path.amount, 0);
 });
 
+export const delayedFlight = schema<Flight>((path) => {
+  required(path.delay);
+  min(path.delay, 15);
+});
+
 export const flightSchema = schema<Flight>((path) => {
   required(path.from, { message: 'Please enter a value!' });
   required(path.to);
   required(path.date);
 
   minLength(path.from, 3);
+
+  // applyWhen(path, (ctx) => ctx.valueOf(path.delayed), delayedFlight);
+  disabled(path.delay, (ctx) => !ctx.valueOf(path.delayed));
+  applyWhenValue(path, (flight) => flight.delayed, delayedFlight);
+
 
   // validateCity(schema.from, ['Graz', 'Hamburg', 'Zürich']);
   validateCityRemote(path.from);

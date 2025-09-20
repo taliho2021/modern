@@ -1,4 +1,3 @@
-import { JsonPipe } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { Control, Field } from '@angular/forms/signals';
 import { initPrice, Price } from 'src/app/model/price';

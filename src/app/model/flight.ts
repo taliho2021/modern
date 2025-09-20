@@ -7,6 +7,7 @@ export interface Flight {
   to: string;
   date: string;
   delayed: boolean;
+  delay: number;
   aircraft: Aircraft;
   prices: Price[];
 }
@@ -18,5 +19,6 @@ export const initFlight: Flight = {
   date: '',
   delayed: false,
   aircraft: initAircraft,
+  delay: 0,
   prices: [],
 };
