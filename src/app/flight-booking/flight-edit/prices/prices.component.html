@@ -1,5 +1,10 @@
 @let priceForms = prices();
 
+<app-validation-errors
+  [errors]="priceForms().errorSummary()"
+  [showFieldNames]="true"
+/>
+
 <fieldset>
   <legend>Prices</legend>
   <table>
@@ -18,7 +23,7 @@
         <app-validation-errors
           [errors]="price().errorSummary()"
           [showFieldNames]="true"
-        ></app-validation-errors>
+        />
       </td>
     </tr>
     }

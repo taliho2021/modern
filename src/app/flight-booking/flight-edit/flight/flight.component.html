@@ -1,70 +1,74 @@
 @let flightForm = flight();
 
-<div class="form-group">
-  <label for="flight-id">ID</label>
-  <input
-    class="form-control"
-    [control]="flightForm.id"
-    id="flight-id"
-    name="id"
-  />
-</div>
+<fieldset>
+  <legend>Flight</legend>
 
-<div class="form-group">
-  <label for="flight-from">From</label>
-  <input
-    class="form-control"
-    [control]="flightForm.from"
-    id="flight-from"
-    name="from"
-  />
-  <!-- Field level errors -->
-  <app-validation-errors
-    [errors]="flightForm.from().errors()"
-  ></app-validation-errors>
-</div>
-
-<div class="form-group">
-  <label for="flight-to">To</label>
-  <input
-    class="form-control"
-    [control]="flightForm.to"
-    id="flight-to"
-    name="to"
-  />
-  <app-validation-errors
-    [errors]="flightForm.from().errors()"
-  ></app-validation-errors>
-</div>
-
-<div class="form-group">
-  <label for="flight-date">Date</label>
-  <div class="input-group">
+  <div class="form-group">
+    <label for="flight-id">ID</label>
     <input
       class="form-control"
-      [control]="flightForm.date"
-      id="flight-date"
-      type="datetime-local"
-      name="date"
+      [control]="flightForm.id"
+      id="flight-id"
+      name="id"
     />
   </div>
-</div>
 
-<div class="form-group form-check">
-  <label class="form-check-label">
+  <div class="form-group">
+    <label for="flight-from">From</label>
     <input
-      type="checkbox"
-      class="form-check-input"
-      [control]="flightForm.delayed"
-      id="flight-delayed"
-      name="delayed"
+      class="form-control"
+      [control]="flightForm.from"
+      id="flight-from"
+      name="from"
     />
-    Delayed</label
-  >
-</div>
+    <!-- Field level errors -->
+    <app-validation-errors
+      [errors]="flightForm.from().errors()"
+    ></app-validation-errors>
+  </div>
 
-<div class="form-group form-check">
-  <label for="delay">Date</label>
-  <app-delay-stepper id="delay" [control]="flightForm.delay" />
-  <app-validation-errors [errors]="flightForm.delay().errors()" />
-</div>
+  <div class="form-group">
+    <label for="flight-to">To</label>
+    <input
+      class="form-control"
+      [control]="flightForm.to"
+      id="flight-to"
+      name="to"
+    />
+    <app-validation-errors
+      [errors]="flightForm.from().errors()"
+    ></app-validation-errors>
+  </div>
+
+  <div class="form-group">
+    <label for="flight-date">Date</label>
+    <div class="input-group">
+      <input
+        class="form-control"
+        [control]="flightForm.date"
+        id="flight-date"
+        type="datetime-local"
+        name="date"
+      />
+    </div>
+  </div>
+
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        [control]="flightForm.delayed"
+        id="flight-delayed"
+        name="delayed"
+      />
+      Delayed</label
+    >
+  </div>
+
+  <div class="form-group form-check">
+    <label for="delay">Delay</label>
+    <app-delay-stepper id="delay" [control]="flightForm.delay" />
+    <app-validation-errors [errors]="flightForm.delay().errors()" />
+  </div>
+</fieldset>

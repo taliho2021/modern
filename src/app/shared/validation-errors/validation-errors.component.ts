@@ -1,5 +1,5 @@
-import { Component, computed, input, Signal } from '@angular/core';
-import { ValidationError } from '@angular/forms/signals';
+import { Component, computed, input } from '@angular/core';
+import { MinValidationError, ValidationError } from '@angular/forms/signals';
 
 @Component({
   selector: 'app-validation-errors',
@@ -22,9 +22,8 @@ function toErrorMessages(
 ): string[] {
   return errors.map((error) => {
     const prefix = showFieldNames ? toFieldName(error) + ': ' : '';
-    const message = toMessage(error.message);
-    const postfix = message ? ', ' + message : '';
-    return prefix + error.kind + postfix;
+    const message = error.message ?? toMessage(error);
+    return prefix + message;
   });
 }
 
@@ -32,11 +31,18 @@ function toFieldName(error: ValidationError) {
   return error.field().name().split('.').at(-1);
 }
 
-function toMessage(kind: string | undefined): string {
-  switch (kind) {
+function toMessage(error: ValidationError): string {
+  switch (error.kind) {
     case 'required':
       return 'Enter a value!';
+    case 'roundtrip':
+    case 'roundtrip_tree':
+      return 'Roundtrips are not supported!';
+    case 'min':
+      console.log(error);
+      const minError = error as MinValidationError;
+      return `Enter at least ${minError.min} characters!`;
     default:
-      return '';
+      return error.kind ?? 'Validation Error';
   }
 }
