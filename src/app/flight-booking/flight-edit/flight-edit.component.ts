@@ -70,6 +70,8 @@ export const flightSchema = schema<Flight>((path) => {
   applyWhenValue(path, (flight) => flight.delayed, delayedFlight);
 
 
+  validateDuplicatePrices(path.prices);
+
   // validateCity(schema.from, ['Graz', 'Hamburg', 'Zürich']);
   validateCityRemote(path.from);
   validateCityHttp(path.from);
@@ -231,6 +233,26 @@ function rxValidateAirport(airport: string): Observable<boolean> {
     delay(2000),
     map(() => allowed.includes(airport))
   );
+}
+
+function validateDuplicatePrices(prices: FieldPath<Price[]>) {
+  validate(prices, (ctx) => {
+    const prices = ctx.value();
+    const flightClasses = new Set<string>();
+
+    for (const price of prices) {
+      if (flightClasses.has(price.flightClass)) {
+        return customError({
+          kind: 'duplicateFlightClass',
+          message: 'There can only be one price per flight class',
+          flightClass: price.flightClass,
+        });
+      }
+      flightClasses.add(price.flightClass);
+    }
+
+    return null;
+  });
 }
 
 function normalize(flight: Flight): Flight {

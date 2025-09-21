@@ -1,12 +1,10 @@
 @let priceForms = prices();
 
-<app-validation-errors
-  [errors]="priceForms().errorSummary()"
-  [showFieldNames]="true"
-/>
-
 <fieldset>
   <legend>Prices</legend>
+  <app-validation-errors
+    [errors]="priceForms().errors()"
+  />
   <table>
     <tr>
       <th>Flight Class</th>
