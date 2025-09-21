@@ -66,9 +66,20 @@ export const flightSchema = schema<Flight>((path) => {
   minLength(path.from, 3);
   // validateCity(schema.from, ['Graz', 'Hamburg', 'Zürich']);
 
+  // validate(path.to, (ctx) => {
+  //   if (ctx.value() === ctx.valueOf(path.from)) {
+  //     return customError({ kind: 'roundtrip'})
+  //   }
+  //   return null;
+  // })
+
   // applyWhen(path, (ctx) => ctx.valueOf(path.delayed), delayedFlight);
   disabled(path.delay, (ctx) => !ctx.valueOf(path.delayed));
   applyWhenValue(path, (flight) => flight.delayed, delayedFlight);
+
+  // required(path.delay, {
+  //   when: (ctx) => ctx.valueOf(path.delayed)
+  // });
 
   validateDuplicatePrices(path.prices);
 
