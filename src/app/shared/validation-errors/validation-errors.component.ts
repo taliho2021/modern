@@ -22,6 +22,8 @@ function toErrorMessages(
 ): string[] {
   return errors.map((error) => {
     const prefix = showFieldNames ? toFieldName(error) + ': ' : '';
+    // const prefix = showFieldNames ? error.field().name() + ': ' : '';
+
     const message = error.message ?? toMessage(error);
     return prefix + message;
   });

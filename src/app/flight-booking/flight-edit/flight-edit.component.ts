@@ -11,7 +11,6 @@ import {
   FieldPath,
   form,
   minLength,
-  PathKind,
   required,
   submit,
   validate,
@@ -59,21 +58,21 @@ export const delayedFlight = schema<Flight>((path) => {
 });
 
 export const flightSchema = schema<Flight>((path) => {
+  // required(path.from, { message: 'Please enter a value!' });
   required(path.from, { message: 'Please enter a value!' });
   required(path.to);
   required(path.date);
 
   minLength(path.from, 3);
+  // validateCity(schema.from, ['Graz', 'Hamburg', 'Zürich']);
 
   // applyWhen(path, (ctx) => ctx.valueOf(path.delayed), delayedFlight);
   disabled(path.delay, (ctx) => !ctx.valueOf(path.delayed));
   applyWhenValue(path, (flight) => flight.delayed, delayedFlight);
 
-
   validateDuplicatePrices(path.prices);
 
-  // validateCity(schema.from, ['Graz', 'Hamburg', 'Zürich']);
-  validateCityRemote(path.from);
+  validateCityAsync(path.from);
   validateCityHttp(path.from);
 
   validateRoundTrip(path);
@@ -81,6 +80,11 @@ export const flightSchema = schema<Flight>((path) => {
 
   apply(path.aircraft, aircraftSchema);
   applyEach(path.prices, priceSchema);
+});
+
+export const flightFormSchema =schema<Flight>((path) => {
+  apply(path, flightSchema);
+  required(path.id);
 });
 
 @Component({
@@ -180,7 +184,7 @@ function validateRoundTrip(schema: FieldPath<Flight>) {
   });
 }
 
-function validateCityRemote(schema: FieldPath<string>) {
+function validateCityAsync(schema: FieldPath<string>) {
   validateAsync(schema, {
     params: (ctx) => ({
       value: ctx.value(),
@@ -204,7 +208,7 @@ function validateCityRemote(schema: FieldPath<string>) {
   });
 }
 
-function validateCityHttp(schema: FieldPath<string, PathKind.Root>) {
+function validateCityHttp(schema: FieldPath<string>) {
   validateHttp(schema, {
     request: (ctx) => ({
       url: 'https://demo.angulararchitects.io/api/flight',
