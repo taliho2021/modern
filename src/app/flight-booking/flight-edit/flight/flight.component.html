@@ -14,7 +14,10 @@
   </div>
 
   <div class="form-group">
-    <label for="flight-from">From</label>
+    <label for="flight-from">
+      From
+      <app-field-meta-data [field]="flightForm.from" />
+    </label>
     <input class="form-control" [control]="flightForm.from" id="flight-from" />
     <app-validation-errors [errors]="flightForm.from().errors()" />
     @if (flightForm.from().pending()) {
