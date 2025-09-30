@@ -1,5 +1,6 @@
 import {
   Component,
+  computed,
   inject,
   input,
   linkedSignal,
@@ -25,6 +26,8 @@ import {
   applyEach,
   applyWhenValue,
   disabled,
+  property,
+  aggregateProperty,
 } from '@angular/forms/signals';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
@@ -40,6 +43,7 @@ import { AircraftComponent } from './aircraft/aircraft.component';
 import { PricesComponent } from './prices/prices.component';
 import { FlightComponent } from './flight/flight.component';
 import { ValidationErrorsComponent } from 'src/app/shared/validation-errors/validation-errors.component';
+import { CITY } from 'src/app/shared/properties';
 
 export const aircraftSchema = schema<Aircraft>((path) => {
   required(path.registration);
@@ -85,6 +89,8 @@ export const flightSchema = schema<Flight>((path) => {
 
   validateCityAsync(path.from);
   validateCityHttp(path.from);
+
+  validateCityAsync(path.to);
 
   validateRoundTrip(path);
   validateRoundTripTree(path);
@@ -197,7 +203,7 @@ function validateRoundTrip(schema: FieldPath<Flight>) {
 
 function validateCityAsync(schema: FieldPath<string>) {
 
-
+  aggregateProperty(schema, CITY, () => true);
 
   validateAsync(schema, {
     params: (ctx) => ({

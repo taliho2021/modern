@@ -26,7 +26,10 @@
   </div>
 
   <div class="form-group">
-    <label for="flight-to">To</label>
+    <label for="flight-to">
+      To
+      <app-field-meta-data [field]="flightForm.to" />
+    </label>
     <input
       class="form-control"
       [control]="flightForm.to"

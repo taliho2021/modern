@@ -1,5 +1,6 @@
 import { Component, computed, input } from '@angular/core';
 import { Field, REQUIRED, MIN_LENGTH, MAX_LENGTH } from '@angular/forms/signals';
+import { CITY } from '../properties';
 
 @Component({
   selector: 'app-field-meta-data',
@@ -10,8 +11,10 @@ import { Field, REQUIRED, MIN_LENGTH, MAX_LENGTH } from '@angular/forms/signals'
 export class FieldMetaDataComponent {
   field = input.required<Field<unknown>>();
 
-  isRequired = computed(() => this.field()().hasProperty(REQUIRED));
+  isRequired = computed(() => this.field()().property(REQUIRED)());
   minLength = computed(() => this.field()().property(MIN_LENGTH)() ?? 0);
   maxLength = computed(() => this.field()().property(MAX_LENGTH)() ?? 30);
   length = computed(() => `(${this.minLength()}..${this.maxLength()})`);
+
+  city = computed(() => this.field()().property(CITY)());
 }
