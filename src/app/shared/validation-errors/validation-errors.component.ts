@@ -43,7 +43,7 @@ function toMessage(error: ValidationError): string {
     case 'min':
       console.log(error);
       const minError = error as MinValidationError;
-      return `Enter at least ${minError.min} characters!`;
+      return `Minimum amount: ${minError.min}`;
     default:
       return error.kind ?? 'Validation Error';
   }
