@@ -1,10 +1,10 @@
 import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { initFlight } from '../../model/flight';
 import { CityPipe } from '../../shared/city.pipe';
 import { StatusToggleComponent } from '../../shared/status-toggle/status-toggle.component';
 import { RouterLink } from '@angular/router';
+import { injectBlink } from 'src/app/shared/inject-blink';
 
 @Component({
   selector: 'app-flight-card',
@@ -13,14 +13,12 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./flight-card.component.css'],
 })
 export class FlightCardComponent {
-  private dialog = inject(MatDialog);
-
   @Input() item = initFlight;
   @Input() selected: boolean = false;
   @Output() selectedChange = new EventEmitter<boolean>();
 
-  ngOnInit() {}
-
+  blink = injectBlink();
+  
   select() {
     this.selected = true;
     this.selectedChange.emit(this.selected);
