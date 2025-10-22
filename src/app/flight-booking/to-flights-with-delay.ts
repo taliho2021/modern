@@ -14,6 +14,8 @@ export function toFlightsWithDelays(
   const oldDate = new Date(oldFlight.date);
   const newDate = addMinutes(oldDate, delay);
 
+  // oldFlight.date = newDate;
+
   const newFlight = { ...oldFlight, date: newDate.toISOString() };
 
   return [newFlight, ...flights.slice(1)];

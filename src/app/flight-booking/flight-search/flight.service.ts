@@ -9,6 +9,7 @@ import {
   HttpMutationOptions,
   rxMutation,
 } from '@angular-architects/ngrx-toolkit';
+import { FlightFilter } from '../flight-filter';
 
 export type MutationSettings<Params, Result> = Omit<
   HttpMutationOptions<Params, Result>,
@@ -64,6 +65,19 @@ export class FlightService {
   }
 
   // TODO: Create Resource
+
+  findResource(criteria: Signal<FlightFilter>) {
+    return httpResource<Flight[]>(
+      () => ({
+        url: 'https://demo.angulararchitects.io/api/flight',
+        params: {
+          from: criteria().from,
+          to: criteria().to,
+        },
+      }),
+      { defaultValue: [] }
+    );
+  }
 
   // TODO: Create Mutation
 }

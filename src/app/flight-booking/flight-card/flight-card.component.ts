@@ -1,4 +1,4 @@
-import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { initFlight } from '../../model/flight';
 import { CityPipe } from '../../shared/city.pipe';
@@ -11,6 +11,7 @@ import { injectBlink } from 'src/app/shared/inject-blink';
   imports: [CommonModule, CityPipe, StatusToggleComponent, RouterLink],
   templateUrl: './flight-card.component.html',
   styleUrls: ['./flight-card.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FlightCardComponent {
   @Input() item = initFlight;
