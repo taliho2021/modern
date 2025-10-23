@@ -1,4 +1,4 @@
-import { Component, computed, effect, inject, Signal, signal, untracked } from '@angular/core';
+import { Component, computed, effect, inject, linkedSignal, Signal, signal, untracked } from '@angular/core';
 import { rxResource, toObservable, toSignal } from '@angular/core/rxjs-interop';
 
 import { CommonModule, JsonPipe } from '@angular/common';
@@ -10,6 +10,8 @@ import { toFlightsWithDelays } from '../to-flights-with-delay';
 import { debounceTime } from 'rxjs';
 import { httpResource } from '@angular/common/http';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { BookingStore } from '../booking.store';
+import { customError, Field, FieldPath, form, minLength, required, validate } from '@angular/forms/signals';
 
 function debounceSignal<T>(source: Signal<T>, msec: number): Signal<T> {
   return toSignal(toObservable(source).pipe(debounceTime(msec)), {
@@ -22,46 +24,44 @@ function debounceSignal<T>(source: Signal<T>, msec: number): Signal<T> {
   standalone: true,
   templateUrl: './flight-search.component.html',
   styleUrls: ['./flight-search.component.css'],
-  imports: [CommonModule, FormsModule, FlightCardComponent, JsonPipe],
+  imports: [CommonModule, FormsModule, FlightCardComponent, JsonPipe, Field],
 })
 export class FlightSearchComponent {
-  private flightService = inject(FlightService);
 
+  store = inject(BookingStore);
   snackBar = inject(MatSnackBar);
 
-  from = signal('Paris');
-  to = signal('London');
+  from = this.store.from;
+  to = this.store.to;
 
-  debouncedCritiera = debounceSignal(
-    computed(() => ({
-      from: this.from(),
-      to: this.to(),
-    })),
-    300
-  );
+  criteria = linkedSignal(() => ({
+    from: this.from(),
+    to: this.to(),
+  }));
 
-  flightResource = this.flightService.findResource(this.debouncedCritiera)
-
-  flights = this.flightResource.value;
-  error = this.flightResource.error;
-  isLoading = this.flightResource.isLoading;
-
-  delayInMesc = signal(0);
-
-  flightRoute = computed(() => this.from() + ' to ' + this.to());
-
-  debouncedRoute = debounceSignal(this.flightRoute, 300);
-
-  flightsWithDelay = computed(() =>
-    toFlightsWithDelays(this.flights(), this.delayInMesc())
-  );
-
-  basket = signal<Record<number, boolean>>({
-    3: true,
-    5: true,
+  searchForm = form(this.criteria, (path) => {
+    required(path.from);
+    minLength(path.from, 3);
+    const allowed = ['Graz', 'Berlin', 'Bern'];
+    validateCity(path.from, allowed);
   });
 
+  debouncedCriteria = debounceSignal(this.criteria, 300);
+
+  flights = this.store.flightsValue;
+  error = this.store.flightsError;
+  isLoading = this.store.flightsIsLoading;
+
+  flightRoute = this.store.flightRoute;
+
+  flightsWithDelay = this.store.flightsWithDelay;
+
+  basket = this.store.basket;
+
   constructor() {
+
+    this.store.updateFilter(this.debouncedCriteria);
+
     effect(() => {
       // auto-tracking
       this.logStuff();
@@ -78,24 +78,32 @@ export class FlightSearchComponent {
   }
 
   search(): void {
-    this.flightService.find(this.from(), this.to()).subscribe({
-      next: (flights) => {
-        this.flights.set(flights);
-      },
-      error: (errResp) => {
-        console.error('Error loading flights', errResp);
-      },
-    });
+    
   }
 
   delay(): void {
-    this.delayInMesc.update((m) => m + 15);
+    this.store.delay();
   }
 
   updateBasket(flightId: number, selected: boolean): void {
-    this.basket.update((basket) => ({
-      ...basket,
-      [flightId]: selected,
-    }));
+    this.store.updateBasket(flightId, selected);
   }
 }
+
+function validateCity(path: FieldPath<string>, allowed: string[]) {
+  validate(path, (ctx) => {
+    const value = ctx.value();
+    if (allowed.includes(value)) {
+      return null;
+    }
+
+    return customError({
+      kind: 'not_supported_city',
+      allowed,
+      actual: value,
+      tryAgain: 2037
+    });
+
+  });
+}
+
