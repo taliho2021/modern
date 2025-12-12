@@ -1,1 +1,334 @@
-<h1>Welcome!</h1>
+<div class="min-h-screen bg-base-100" style="margin: -2rem; padding: 2rem">
+  <!-- Hero Section -->
+  <div
+    class="hero bg-gradient-to-br from-base-200 via-base-300 to-base-200 py-20"
+  >
+    <div class="hero-content text-center">
+      <div class="max-w-3xl">
+        <h1 class="text-6xl font-bold text-primary mb-6">
+          Welcome to Flight Booking
+        </h1>
+        <p class="text-xl text-base-content/80 mb-8">
+          Your gateway to seamless travel experiences. Book flights, manage
+          reservations, and explore destinations with ease.
+        </p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a routerLink="/flight-booking" class="btn btn-primary btn-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+              />
+            </svg>
+            Book a Flight
+          </a>
+          <a routerLink="/about" class="btn btn-outline btn-lg"> Learn More </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Stats -->
+  <div class="container mx-auto px-4 py-8">
+    <div
+      class="stats stats-vertical lg:stats-horizontal shadow-xl w-full mb-12"
+    >
+      <div class="stat bg-base-200/50">
+        <div class="stat-figure text-primary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block w-8 h-8 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+            ></path>
+          </svg>
+        </div>
+        <div class="stat-title text-base-content/70">Active Flights</div>
+        <div class="stat-value text-primary">1,234</div>
+        <div class="stat-desc text-base-content/60">Today's departures</div>
+      </div>
+
+      <div class="stat bg-base-200/50">
+        <div class="stat-figure text-secondary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block w-8 h-8 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+            ></path>
+          </svg>
+        </div>
+        <div class="stat-title text-base-content/70">Destinations</div>
+        <div class="stat-value text-secondary">150+</div>
+        <div class="stat-desc text-base-content/60">Cities worldwide</div>
+      </div>
+
+      <div class="stat bg-base-200/50">
+        <div class="stat-figure text-accent">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block w-8 h-8 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+            ></path>
+          </svg>
+        </div>
+        <div class="stat-title text-base-content/70">Happy Travelers</div>
+        <div class="stat-value text-accent">50K+</div>
+        <div class="stat-desc text-base-content/60">Satisfied customers</div>
+      </div>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <!-- Feature 1 -->
+      <div
+        class="card bg-base-200/50 shadow-xl hover:shadow-2xl transition-shadow"
+      >
+        <figure class="px-6 pt-6">
+          <div class="avatar placeholder">
+            <div class="bg-primary text-primary-content rounded-full w-20">
+              <span class="text-3xl">✈️</span>
+            </div>
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-primary">Quick Booking</h2>
+          <p class="text-base-content/70">
+            Find and book your perfect flight in minutes. Our intuitive search
+            makes it easy to compare prices and schedules.
+          </p>
+          <div class="card-actions justify-end">
+            <a routerLink="/flight-booking" class="btn btn-primary btn-sm"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div
+        class="card bg-base-200/50 shadow-xl hover:shadow-2xl transition-shadow"
+      >
+        <figure class="px-6 pt-6">
+          <div class="avatar placeholder">
+            <div class="bg-secondary text-secondary-content rounded-full w-20">
+              <span class="text-3xl">🔍</span>
+            </div>
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-secondary">Flight Search</h2>
+          <p class="text-base-content/70">
+            Search for flights by destination, date, or airline. Filter results
+            to find exactly what you're looking for.
+          </p>
+          <div class="card-actions justify-end">
+            <a routerLink="/flight-booking" class="btn btn-secondary btn-sm"
+              >Search</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div
+        class="card bg-base-200/50 shadow-xl hover:shadow-2xl transition-shadow"
+      >
+        <figure class="px-6 pt-6">
+          <div class="avatar placeholder">
+            <div class="bg-accent text-accent-content rounded-full w-20">
+              <span class="text-3xl">📋</span>
+            </div>
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-accent">Manage Bookings</h2>
+          <p class="text-base-content/70">
+            View and manage your upcoming flights. Check in online, select
+            seats, and make changes to your reservations.
+          </p>
+          <div class="card-actions justify-end">
+            <a routerLink="/next-flights" class="btn btn-accent btn-sm"
+              >Manage</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div
+        class="card bg-base-200/50 shadow-xl hover:shadow-2xl transition-shadow"
+      >
+        <figure class="px-6 pt-6">
+          <div class="avatar placeholder">
+            <div class="bg-primary text-primary-content rounded-full w-20">
+              <span class="text-3xl">🎫</span>
+            </div>
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-primary">Check-In</h2>
+          <p class="text-base-content/70">
+            Quick and easy online check-in. Get your boarding pass and skip the
+            lines at the airport.
+          </p>
+          <div class="card-actions justify-end">
+            <a routerLink="/next-flights/checkin" class="btn btn-primary btn-sm"
+              >Check In</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div
+        class="card bg-base-200/50 shadow-xl hover:shadow-2xl transition-shadow"
+      >
+        <figure class="px-6 pt-6">
+          <div class="avatar placeholder">
+            <div class="bg-secondary text-secondary-content rounded-full w-20">
+              <span class="text-3xl">👥</span>
+            </div>
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-secondary">Passenger Search</h2>
+          <p class="text-base-content/70">
+            Find passenger information quickly. Search by name, booking
+            reference, or flight number.
+          </p>
+          <div class="card-actions justify-end">
+            <a routerLink="/flight-booking" class="btn btn-secondary btn-sm"
+              >Search</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 6 -->
+      <div
+        class="card bg-base-200/50 shadow-xl hover:shadow-2xl transition-shadow"
+      >
+        <figure class="px-6 pt-6">
+          <div class="avatar placeholder">
+            <div class="bg-accent text-accent-content rounded-full w-20">
+              <span class="text-3xl">⭐</span>
+            </div>
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-accent">Best Deals</h2>
+          <p class="text-base-content/70">
+            Get the best prices on flights. We compare rates from multiple
+            airlines to ensure you get the best deal.
+          </p>
+          <div class="card-actions justify-end">
+            <a routerLink="/flight-booking" class="btn btn-accent btn-sm"
+              >View Deals</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Destinations -->
+    <div class="card bg-base-200/50 shadow-xl mb-12">
+      <div class="card-body">
+        <h2 class="card-title text-3xl mb-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-primary"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          Popular Destinations
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="badge badge-primary badge-lg p-4">New York</div>
+          <div class="badge badge-secondary badge-lg p-4">London</div>
+          <div class="badge badge-accent badge-lg p-4">Tokyo</div>
+          <div class="badge badge-primary badge-lg p-4">Paris</div>
+          <div class="badge badge-secondary badge-lg p-4">Dubai</div>
+          <div class="badge badge-accent badge-lg p-4">Sydney</div>
+          <div class="badge badge-primary badge-lg p-4">Singapore</div>
+          <div class="badge badge-secondary badge-lg p-4">Barcelona</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div
+      class="card bg-gradient-to-r from-primary to-secondary text-primary-content shadow-2xl"
+    >
+      <div class="card-body text-center">
+        <h2 class="card-title justify-center text-4xl mb-4">
+          Ready to Start Your Journey?
+        </h2>
+        <p class="text-xl mb-8 opacity-90">
+          Join thousands of travelers who trust us for their flight bookings.
+          Start planning your next adventure today!
+        </p>
+        <div class="card-actions justify-center">
+          <a routerLink="/flight-booking" class="btn btn-accent btn-lg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+              />
+            </svg>
+            Book Your Flight Now
+          </a>
+          <a
+            routerLink="/about"
+            class="btn btn-outline btn-lg btn-accent-content"
+          >
+            Learn More About Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

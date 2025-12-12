@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { FlightService } from '../flight-booking/flight-search/flight.service';
 import { mergeOp } from '@angular-architects/ngrx-toolkit';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })

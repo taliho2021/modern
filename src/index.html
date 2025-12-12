@@ -32,5 +32,24 @@
 
   <body>
     <app-root></app-root>
+    <script>
+      // Ensure theme is set on HTML element immediately
+      const path = window.location.pathname;
+      let theme = "light";
+      if (path.includes("/home")) {
+        theme = "dark";
+      } else if (path.includes("/about")) {
+        theme = "cupcake";
+      } else if (path.includes("/flight-booking")) {
+        theme = "emerald";
+      } else if (path.includes("/next-flights/checkin")) {
+        theme = "forest";
+      } else if (path.includes("/next-flights")) {
+        theme = "luxury";
+      } else if (path.includes("/not-found") || path === "**") {
+        theme = "halloween";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
+    </script>
   </body>
 </html>

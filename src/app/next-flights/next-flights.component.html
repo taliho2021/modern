@@ -1,4 +1,16 @@
-<h2>Your Next Flights</h2>
-<pre>{{ flights$ | async | json }}</pre>
+<div class="min-h-screen bg-base-100" style="margin: -2rem; padding: 2rem">
+  <div class="container mx-auto px-4 py-8">
+    <h2 class="text-4xl font-bold text-primary mb-6">Your Next Flights</h2>
 
-<app-checkin></app-checkin>
+    <div class="card bg-base-200 shadow-xl mb-6">
+      <div class="card-body">
+        <h3 class="card-title text-secondary">Upcoming Flights</h3>
+        <div class="mockup-code">
+          <pre data-prefix="$"><code>{{ flights$ | async | json }}</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <app-checkin></app-checkin>
+  </div>
+</div>
