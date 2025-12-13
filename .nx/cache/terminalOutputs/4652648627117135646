@@ -1,0 +1,2430 @@
+[33m❯[39m Building...
+[32m✔[39m Building...
+[37mApplication bundle generation failed. [2.390 seconds] - 2025-12-03T21:35:17.668Z[39m
+[37m[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.html:16:15:[39m[22m
+[1m[33m[37m      16 │   <mat-option *[32mngFor[37m="let consignee of consigneeOptions" [value]="...[39m[22m
+[1m[33m         ╵                [32m~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Warning occurs in the template of component HomeComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[33m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[33m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[control]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[control]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[control]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property o[39m[22m[1m[31mf 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[control]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[control]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"@angular/forms/signals"' has no exported member 'Control'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:9:9:[39m[22m
+[1m[31m[37m      9 │ import { [32mControl[37m, form, minLength, required } from '@angular/forms/...[39m[22m
+[1m[31m        ╵          [32m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG1010: 'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value could not be determined statically.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:16:47:[39m[22m
+[1m[31m[37m      16 │   imports: [CommonModule, FlightCardComponent, [32mControl[37m],[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Unkno[39m[22m[1m[31mwn reference.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:16:47:[39m[22m
+[1m[31m[37m      16 │   imports: [CommonModule, FlightCardComponent, [32mControl[37m],[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'matAutocomplete' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:9:2:[39m[22m
+[1m[31m[37m      9 │   [32m[matAutocomplete]="consigneeAuto"[37m[39m[22m
+[1m[31m        ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-autocomplete' is not a known element:[39m[22m
+[1m[31m1. If 'mat-autocomplete' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-autocomplete' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:12:0:[39m[22m
+[1m[31m[37m      12 │ [32m<mat-autocomplete[37m[39m[22m
+[1m[31m         ╵ [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8003: No directive found with exportAs 'matAutocomplete'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:13:18:[39m[22m
+[1m[31m[37m      13 │   #consigneeAuto="[32mmatAutocomplete[37m"[39m[22m
+[1m[31m         ╵                   [32m~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m[39m[22m[1m[31m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onConsigneeSelected' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:20:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="[32monConsigneeSelected[37m($event.option.value)"[39m[22m
+[1m[31m         ╵                     [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'option' does not exist on type 'Event'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:47:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="onConsigneeSelected($event.[32moption[37m.value)"[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-option' is not a known element:[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:2:[39m[22m
+[1m[31m[37m      16 │   [32m<mat-option *ngFor="let consignee of consigneeOptions" [value]="[37m...[39m[22m
+[1m[31m         ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/ho[39m[22m[1m[31mme.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'value' since it isn't a known property of 'mat-option'.[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:57:[39m[22m
+[1m[31m[37m      16 │ ...on *ngFor="let consignee of consigneeOptions" [32m[value]="consignee"[37m>[39m[22m
+[1m[31m         ╵                                                  [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37mWatch mode enabled. Watching for file changes...[39m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.435 seconds] - 2025-12-03T21:36:53.826Z[39m
+[37m[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.html:16:15:[39m[22m
+[1m[33m[37m      16 │   <mat-option *[32mngFor[37m="let consignee of consigneeOptions" [value]="...[39m[22m
+[1m[33m         ╵                [32m~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Warning occurs in the template of component HomeComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[33m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[33m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[control]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[control]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[control]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property o[39m[22m[33m❯[39m Changes detected. Rebuilding...
+[1m[31mf 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[control]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[control]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG1010: 'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value could not be determined statically.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:16:47:[39m[22m
+[1m[31m[37m      16 │   imports: [CommonModule, FlightCardComponent, [32mControl[37m],[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Unknown reference.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:16:47:[39m[22m
+[1m[31m[37m      16 │   imports: [CommonModule, FlightCardComponent, [32mControl[37m],[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Control'.[0m [1m[35m[plugin angular-compiler][0[39m[22m[1m[31mm[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:16:47:[39m[22m
+[1m[31m[37m      16 │   imports: [CommonModule, FlightCardComponent, [32mControl[37m],[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'matAutocomplete' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:9:2:[39m[22m
+[1m[31m[37m      9 │   [32m[matAutocomplete]="consigneeAuto"[37m[39m[22m
+[1m[31m        ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-autocomplete' is not a known element:[39m[22m
+[1m[31m1. If 'mat-autocomplete' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-autocomplete' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:12:0:[39m[22m
+[1m[31m[37m      12 │ [32m<mat-autocomplete[37m[39m[22m
+[1m[31m         ╵ [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8003: No directive found with exportAs 'matAutocomplete'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:13:18:[39m[22m
+[1m[31m[37m      13 │   #consigneeAuto="[32mmatAutocomplete[37m"[39m[22m
+[1m[31m         ╵                   [32m~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   [39m[22m[1m[31mtemplateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onConsigneeSelected' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:20:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="[32monConsigneeSelected[37m($event.option.value)"[39m[22m
+[1m[31m         ╵                     [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'option' does not exist on type 'Event'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:47:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="onConsigneeSelected($event.[32moption[37m.value)"[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-option' is not a known element:[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:2:[39m[22m
+[1m[31m[37m      16 │   [32m<mat-option *ngFor="let consignee of consigneeOptions" [value]="[37m...[39m[22m
+[1m[31m         ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component[39m[22m[1m[31m.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'value' since it isn't a known property of 'mat-option'.[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:57:[39m[22m
+[1m[31m[37m      16 │ ...on *ngFor="let consignee of consigneeOptions" [32m[value]="consignee"[37m>[39m[22m
+[1m[31m         ╵                                                  [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.373 seconds] - 2025-12-03T21:36:54.203Z[39m
+[37m[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.html:16:15:[39m[22m
+[1m[33m[37m      16 │   <mat-option *[32mngFor[37m="let consignee of consigneeOptions" [value]="...[39m[22m
+[1m[33m         ╵                [32m~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Warning occurs in the template of component HomeComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[33m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[33m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[control]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[control]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[control]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property o[39m[22m[33m❯[39m Changes detected. Rebuilding...
+[1m[31mf 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[control]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[control]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angu[39m[22m[1m[31mlar-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'matAutocomplete' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:9:2:[39m[22m
+[1m[31m[37m      9 │   [32m[matAutocomplete]="consigneeAuto"[37m[39m[22m
+[1m[31m        ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-autocomplete' is not a known element:[39m[22m
+[1m[31m1. If 'mat-autocomplete' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-autocomplete' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:12:0:[39m[22m
+[1m[31m[37m      12 │ [32m<mat-autocomplete[37m[39m[22m
+[1m[31m         ╵ [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8003: No directive found with exportAs 'matAutocomplete'.[0m [1m[35m[plugin a[39m[22m[1m[31mngular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:13:18:[39m[22m
+[1m[31m[37m      13 │   #consigneeAuto="[32mmatAutocomplete[37m"[39m[22m
+[1m[31m         ╵                   [32m~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onConsigneeSelected' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:20:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="[32monConsigneeSelected[37m($event.option.value)"[39m[22m
+[1m[31m         ╵                     [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'option' does not exist on type 'Event'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:47:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="onConsigneeSelected($event.[32moption[37m.value)"[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-option' is not a known element:[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/h[39m[22m[1m[31mome.component.html:16:2:[39m[22m
+[1m[31m[37m      16 │   [32m<mat-option *ngFor="let consignee of consigneeOptions" [value]="[37m...[39m[22m
+[1m[31m         ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'value' since it isn't a known property of 'mat-option'.[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:57:[39m[22m
+[1m[31m[37m      16 │ ...on *ngFor="let consignee of consigneeOptions" [32m[value]="consignee"[37m>[39m[22m
+[1m[31m         ╵                                                  [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.401 seconds] - 2025-12-03T21:36:54.607Z[39m
+[37m[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.html:16:15:[39m[22m
+[1m[33m[37m      16 │   <mat-option *[32mngFor[37m="let consignee of consigneeOptions" [value]="...[39m[22m
+[1m[33m         ╵                [32m~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Warning occurs in the template of component HomeComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[33m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[33m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[control]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[[39m[22m[33m❯[39m Changes detected. Rebuilding...
+[1m[31m0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[control]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[control]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler[39m[22m[1m[31m][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'matAutocomplete' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:9:2:[39m[22m
+[1m[31m[37m      9 │   [32m[matAutocomplete]="consigneeAuto"[37m[39m[22m
+[1m[31m        ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-autocomplete' is not a known element:[39m[22m
+[1m[31m1. If 'mat-autocomplete' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-autocomplete' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:12:0:[39m[22m
+[1m[31m[37m      12 │ [32m<mat-autocomplete[37m[39m[22m
+[1m[31m         ╵ [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8003: No directive found with exportAs 'matAutocomplete'.[0m [1m[35m[plugin angular-compi[39m[22m[1m[31mler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:13:18:[39m[22m
+[1m[31m[37m      13 │   #consigneeAuto="[32mmatAutocomplete[37m"[39m[22m
+[1m[31m         ╵                   [32m~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onConsigneeSelected' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:20:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="[32monConsigneeSelected[37m($event.option.value)"[39m[22m
+[1m[31m         ╵                     [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'option' does not exist on type 'Event'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:47:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="onConsigneeSelected($event.[32moption[37m.value)"[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-option' is not a known element:[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.componen[39m[22m[1m[31mt.html:16:2:[39m[22m
+[1m[31m[37m      16 │   [32m<mat-option *ngFor="let consignee of consigneeOptions" [value]="[37m...[39m[22m
+[1m[31m         ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'value' since it isn't a known property of 'mat-option'.[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:57:[39m[22m
+[1m[31m[37m      16 │ ...on *ngFor="let consignee of consigneeOptions" [32m[value]="consignee"[37m>[39m[22m
+[1m[31m         ╵                                                  [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.281 seconds] - 2025-12-03T21:36:54.891Z[39m
+[37m[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.html:16:15:[39m[22m
+[1m[33m[37m      16 │   <mat-option *[32mngFor[37m="let consignee of consigneeOptions" [value]="...[39m[22m
+[1m[33m         ╵                [32m~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Warning occurs in the template of component HomeComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[33m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[33m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1[39m[22m[33m❯[39m Changes detected. Rebuilding...
+[1m[31mm[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[control]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[control]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'matAutocomplete' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:9:2:[39m[22m
+[1m[31m[37m      9 │   [32m[matAutocomplete]="consigneeAuto"[37m[39m[22m
+[1m[31m        ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-autocomplete' is not a known element:[39m[22m
+[1m[31m1. If 'mat-autocomplete' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-autocomplete' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:12:0:[39m[22m
+[1m[31m[37m      12 │ [32m<mat-autocomplete[37m[39m[22m
+[1m[31m         ╵ [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8003: No directive found with exportAs 'matAutocomplete'.[0m [1m[35m[plugin angular-compiler][[39m[22m[1m[31m0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:13:18:[39m[22m
+[1m[31m[37m      13 │   #consigneeAuto="[32mmatAutocomplete[37m"[39m[22m
+[1m[31m         ╵                   [32m~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onConsigneeSelected' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:20:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="[32monConsigneeSelected[37m($event.option.value)"[39m[22m
+[1m[31m         ╵                     [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'option' does not exist on type 'Event'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:47:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="onConsigneeSelected($event.[32moption[37m.value)"[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-option' is not a known element:[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html[39m[22m[1m[31m:16:2:[39m[22m
+[1m[31m[37m      16 │   [32m<mat-option *ngFor="let consignee of consigneeOptions" [value]="[37m...[39m[22m
+[1m[31m         ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'value' since it isn't a known property of 'mat-option'.[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:57:[39m[22m
+[1m[31m[37m      16 │ ...on *ngFor="let consignee of consigneeOptions" [32m[value]="consignee"[37m>[39m[22m
+[1m[31m         ╵                                                  [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.242 seconds] - 2025-12-03T21:36:55.135Z[39m
+[37m[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.html:16:15:[39m[22m
+[1m[33m[37m      16 │   <mat-option *[32mngFor[37m="let consignee of consigneeOptions" [value]="...[39m[22m
+[1m[33m         ╵                [32m~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Warning occurs in the template of component HomeComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[33m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[33m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1[39m[22m[1m[31mm[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[control]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[control]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'matAutocomplete' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:9:2:[39m[22m
+[1m[31m[37m      9 │   [32m[matAutocomplete]="consigneeAuto"[37m[39m[22m
+[1m[31m        ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-autocomplete' is not a known element:[39m[22m
+[1m[31m1. If 'mat-autocomplete' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-autocomplete' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:12:0:[39m[22m
+[1m[31m[37m      12 │ [32m<mat-autocomplete[37m[39m[22m
+[1m[31m         ╵ [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8003: No directive found with exportAs 'matAutocomplete'.[0m [1m[35m[plugin angular-compiler][[39m[22m[1m[31m0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:13:18:[39m[22m
+[1m[31m[37m      13 │   #consigneeAuto="[32mmatAutocomplete[37m"[39m[22m
+[1m[31m         ╵                   [32m~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onConsigneeSelected' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:20:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="[32monConsigneeSelected[37m($event.option.value)"[39m[22m
+[1m[31m         ╵                     [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'option' does not exist on type 'Event'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:47:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="onConsigneeSelected($event.[32moption[37m.value)"[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-option' is not a known element:[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html[39m[22m[1m[31m:16:2:[39m[22m
+[1m[31m[37m      16 │   [32m<mat-option *ngFor="let consignee of consigneeOptions" [value]="[37m...[39m[22m
+[1m[31m         ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'value' since it isn't a known property of 'mat-option'.[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:57:[39m[22m
+[1m[31m[37m      16 │ ...on *ngFor="let consignee of consigneeOptions" [32m[value]="consignee"[37m>[39m[22m
+[1m[31m         ╵                                                  [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.221 seconds] - 2025-12-03T21:36:55.513Z[39m
+[37m[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.html:16:15:[39m[22m
+[1m[33m[37m      16 │   <mat-option *[32mngFor[37m="let consignee of consigneeOptions" [value]="...[39m[22m
+[1m[33m         ╵                [32m~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Warning occurs in the template of component HomeComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[33m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[33m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[control]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    s[39m[22m[1m[31mrc/app/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'matAutocomplete' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:9:2:[39m[22m
+[1m[31m[37m      9 │   [32m[matAutocomplete]="consigneeAuto"[37m[39m[22m
+[1m[31m        ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-autocomplete' is not a known element:[39m[22m
+[1m[31m1. If 'mat-autocomplete' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-autocomplete' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:12:0:[39m[22m
+[1m[31m[37m      12 │ [32m<mat-autocomplete[37m[39m[22m
+[1m[31m         ╵ [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8003: No directive found with exportAs 'matAutocomplete'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [39m[22m[1m[31m  src/app/home/home.component.html:13:18:[39m[22m
+[1m[31m[37m      13 │   #consigneeAuto="[32mmatAutocomplete[37m"[39m[22m
+[1m[31m         ╵                   [32m~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onConsigneeSelected' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:20:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="[32monConsigneeSelected[37m($event.option.value)"[39m[22m
+[1m[31m         ╵                     [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'option' does not exist on type 'Event'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:47:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="onConsigneeSelected($event.[32moption[37m.value)"[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-option' is not a known element:[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:2:[39m[22m[1m[31m[39m[22m
+[1m[31m[37m      16 │   [32m<mat-option *ngFor="let consignee of consigneeOptions" [value]="[37m...[39m[22m
+[1m[31m         ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'value' since it isn't a known property of 'mat-option'.[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:57:[39m[22m
+[1m[31m[37m      16 │ ...on *ngFor="let consignee of consigneeOptions" [32m[value]="consignee"[37m>[39m[22m
+[1m[31m         ╵                                                  [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.208 seconds] - 2025-12-03T21:36:55.806Z[39m
+[37m[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.html:16:15:[39m[22m
+[1m[33m[37m      16 │   <mat-option *[32mngFor[37m="let consignee of consigneeOptions" [value]="...[39m[22m
+[1m[33m         ╵                [32m~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m  Warning occurs in the template of component HomeComponent.[39m[22m
+[1m[33m[39m[22m
+[1m[33m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[33m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[33m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[33m[39m[22m
+[1m[33m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app[39m[22m[1m[31m/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'matAutocomplete' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:9:2:[39m[22m
+[1m[31m[37m      9 │   [32m[matAutocomplete]="consigneeAuto"[37m[39m[22m
+[1m[31m        ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-autocomplete' is not a known element:[39m[22m
+[1m[31m1. If 'mat-autocomplete' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-autocomplete' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:12:0:[39m[22m
+[1m[31m[37m      12 │ [32m<mat-autocomplete[37m[39m[22m
+[1m[31m         ╵ [32m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8003: No directive found with exportAs 'matAutocomplete'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/[39m[22m[1m[31mapp/home/home.component.html:13:18:[39m[22m
+[1m[31m[37m      13 │   #consigneeAuto="[32mmatAutocomplete[37m"[39m[22m
+[1m[31m         ╵                   [32m~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onConsigneeSelected' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:20:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="[32monConsigneeSelected[37m($event.option.value)"[39m[22m
+[1m[31m         ╵                     [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'option' does not exist on type 'Event'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:47:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="onConsigneeSelected($event.[32moption[37m.value)"[39m[22m
+[1m[31m         ╵                                                [32m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'mat-option' is not a known element:[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:2:[39m[22m
+[1m[31m[37m[39m[22m[1m[31m      16 │   [32m<mat-option *ngFor="let consignee of consigneeOptions" [value]="[37m...[39m[22m
+[1m[31m         ╵   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'value' since it isn't a known property of 'mat-option'.[39m[22m
+[1m[31m1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:57:[39m[22m
+[1m[31m[37m      16 │ ...on *ngFor="let consignee of consigneeOptions" [32m[value]="consignee"[37m>[39m[22m
+[1m[31m         ╵                                                  [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:8:15:[39m[22m
+[1m[31m[37m      8 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.515 seconds] - 2025-12-03T21:36:59.610Z[39m
+[37m[39m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app[39m[22m[1m[31m/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onConsigneeSelected' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:20:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="[32monConsigneeSelected[37m($event.option.value)"[39m[22m
+[1m[31m         ╵                     [32m~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:12:15:[39m[22m
+[1m[31m[37m      12 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'consigneeOptions' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:16:39:[39m[22m
+[1m[31m[37m      16 │ ...on *ngFor="let consignee of [32mconsigneeOptions[37m" [value]="consignee">[39m[22m
+[1m[31m         ╵                                [32m~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:12:15:[39m[22m
+[1m[31m[37m      12 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.144 seconds] - 2025-12-03T21:37:00.962Z[39m
+[37m[39m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app[39m[22m[1m[31m/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.145 seconds] - 2025-12-03T21:37:02.870Z[39m
+[37m[39m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app[39m[22m[1m[31m/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type 'MatAutocompleteSelectedEvent' is not assignable to parameter of type '{ coName: string; }'.[39m[22m
+[1m[31m  Property 'coName' is missing in type 'MatAutocompleteSelectedEvent' but required in type '{ coName: string; }'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.html:14:40:[39m[22m
+[1m[31m[37m      14 │   (optionSelected)="onConsigneeSelected([32m$event[37m)"[39m[22m
+[1m[31m         ╵                                         [32m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component HomeComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/home/home.component.ts:12:15:[39m[22m
+[1m[31m[37m      12 │   templateUrl: [32m'./home.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.157 seconds] - 2025-12-03T21:37:03.810Z[39m
+[37m[39m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app[39m[22m[1m[31m/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:14:15:[39m[22m
+[1m[31m[37m      14 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.478 seconds] - 2025-12-03T21:37:13.997Z[39m
+[37m[39m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.124 seconds] - 2025-12-03T21:37:38.197Z[39m
+[37m[39m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.326 seconds] - 2025-12-03T21:37:45.111Z[39m
+[37m[39m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.164 seconds] - 2025-12-03T21:37:50.838Z[39m
+[37m[39m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[37mApplication bundle generation failed. [0.343 seconds] - 2025-12-03T21:38:22.275Z[39m
+[37m[39m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:15:6:[39m[22m
+[1m[31m[37m      15 │       [32m[field]="flightForm.id"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:25:6:[39m[22m
+[1m[31m[37m      25 │       [32m[field]="flightForm.from"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:37:6:[39m[22m
+[1m[31m[37m      37 │       [32m[field]="flightForm.to"[37m[39m[22m
+[1m[31m         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[39m[22m[1m[31m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:49:8:[39m[22m
+[1m[31m[37m      49 │         [32m[field]="flightForm.date"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'field' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.html:62:8:[39m[22m
+[1m[31m[37m      62 │         [32m[field]="flightForm.delayed"[37m[39m[22m
+[1m[31m         ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightEditComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-edit/flight-edit.component.ts:27:15:[39m[22m
+[1m[31m[37m      27 │   templateUrl: [32m'./flight-edit.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.html:8:11:[39m[22m
+[1m[31m[37m      8 │     <input [32m[control]="filterForm.from"[37m name="from" class="form-cont...[39m[22m
+[1m[31m        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:11:15:[39m[22m
+[1m[31m[37m      11 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'control' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app[39m[22m[1m[31m/flight-booking/flight-search/flight-search.component.html:12:11:[39m[22m
+[1m[31m[37m      12 │     <input [32m[control]="filterForm.to"[37m name="to" class="form-control...[39m[22m
+[1m[31m         ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  Error occurs in the template of component FlightSearchComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m    src/app/flight-booking/flight-search/flight-search.component.ts:11:15:[39m[22m
+[1m[31m[37m      11 │   templateUrl: [32m'./flight-search.component.html'[37m,[39m[22m
+[1m[31m         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m

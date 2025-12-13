@@ -1,1 +1,19 @@
 <h1>Welcome!</h1>
+
+<input
+  type="text"
+  class="largeFormControl"
+  placeholder="Consignee Name"
+  requiredInput
+  formControlName="name"
+  [matAutocomplete]="consigneeAuto"
+/>
+
+<mat-autocomplete
+  #consigneeAuto="matAutocomplete"
+  (optionSelected)="onConsigneeSelected($event)"
+>
+  <mat-option *ngFor="let consignee of consigneeOptions" [value]="consignee">
+    {{ consignee.coName }}
+  </mat-option>
+</mat-autocomplete>

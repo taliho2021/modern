@@ -1,19 +1,16 @@
-import {
-  Component,
-  inject,
-  linkedSignal,
-} from '@angular/core';
+import { Component, inject, linkedSignal } from '@angular/core';
+import { form, minLength, required } from '@angular/forms/signals';
+
 import { CommonModule } from '@angular/common';
-import { FlightCardComponent } from '../flight-card/flight-card.component';
 import { FlightBookingStore } from '../flight-booking.store';
-import { Control, form, minLength, required } from '@angular/forms/signals';
+import { FlightCardComponent } from '../flight-card/flight-card.component';
 import { debounceSignal } from 'src/app/shared/debounce-signal';
 
 @Component({
   selector: 'app-flight-search',
   templateUrl: './flight-search.component.html',
   styleUrls: ['./flight-search.component.css'],
-  imports: [CommonModule, FlightCardComponent, Control],
+  imports: [CommonModule, FlightCardComponent],
 })
 export class FlightSearchComponent {
   store = inject(FlightBookingStore);
