@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { FlightService } from '../flight-booking/flight-search/flight.service';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
@@ -11,6 +11,7 @@ import { mergeOp } from '@angular-architects/ngrx-toolkit';
   selector: 'app-home',
   imports: [
     CommonModule,
+    RouterLink,
     MatAutocompleteModule,
     MatOptionModule,
     MatInputModule,
