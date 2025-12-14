@@ -36,10 +36,10 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/core": "~21.0.0",
-    "@angular-devkit/schematics": "~21.0.0",
-    "@angular/build": "^21.0.0",
-    "@angular/cli": "~21.0.0",
+    "@angular-devkit/core": "~21.0.3",
+    "@angular-devkit/schematics": "~21.0.3",
+    "@angular/build": "^21.0.3",
+    "@angular/cli": "~21.0.3",
     "@angular/compiler-cli": "^21.0.0",
     "@nx/angular": "22.2.3",
     "@nx/workspace": "22.2.3",
