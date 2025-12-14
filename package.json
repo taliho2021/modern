@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "nx": "nx",
+    "generate": "nx generate",
+    "g": "nx generate",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",

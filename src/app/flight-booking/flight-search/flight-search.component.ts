@@ -1,5 +1,5 @@
 import { Component, inject, linkedSignal } from '@angular/core';
-import { form, minLength, required } from '@angular/forms/signals';
+import { Field, form, minLength, required } from '@angular/forms/signals';
 
 import { CommonModule } from '@angular/common';
 import { FlightBookingStore } from '../flight-booking.store';
@@ -10,7 +10,7 @@ import { debounceSignal } from 'src/app/shared/debounce-signal';
   selector: 'app-flight-search',
   templateUrl: './flight-search.component.html',
   styleUrls: ['./flight-search.component.css'],
-  imports: [CommonModule, FlightCardComponent],
+  imports: [CommonModule, Field, FlightCardComponent],
 })
 export class FlightSearchComponent {
   store = inject(FlightBookingStore);

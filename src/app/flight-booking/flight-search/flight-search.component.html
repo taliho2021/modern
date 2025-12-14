@@ -26,8 +26,7 @@
               <span class="label-text font-semibold">From:</span>
             </label>
             <input
-              [control]="filterForm.from"
-              name="from"
+              [field]="filterForm.from"
               type="text"
               placeholder="Enter departure city"
               class="input input-bordered w-full"
@@ -39,8 +38,7 @@
               <span class="label-text font-semibold">To:</span>
             </label>
             <input
-              [control]="filterForm.to"
-              name="to"
+              [field]="filterForm.to"
               type="text"
               placeholder="Enter destination city"
               class="input input-bordered w-full"

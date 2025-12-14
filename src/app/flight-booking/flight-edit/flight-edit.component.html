@@ -51,9 +51,8 @@
             </label>
             <input
               class="input input-bordered"
-              [control]="flightForm.id"
+              [field]="flightForm.id"
               id="flight-id"
-              name="id"
               type="number"
             />
           </div>
@@ -64,9 +63,8 @@
             </label>
             <input
               class="input input-bordered"
-              [control]="flightForm.from"
+              [field]="flightForm.from"
               id="flight-from"
-              name="from"
               type="text"
               placeholder="Departure city"
             />
@@ -85,9 +83,8 @@
             </label>
             <input
               class="input input-bordered"
-              [control]="flightForm.to"
+              [field]="flightForm.to"
               id="flight-to"
-              name="to"
               type="text"
               placeholder="Destination city"
             />
@@ -106,10 +103,9 @@
             </label>
             <input
               class="input input-bordered"
-              [control]="flightForm.date"
+              [field]="flightForm.date"
               id="flight-date"
               type="datetime-local"
-              name="date"
             />
           </div>
 
@@ -119,9 +115,8 @@
               <input
                 type="checkbox"
                 class="checkbox checkbox-primary"
-                [control]="flightForm.delayed"
+                [field]="flightForm.delayed"
                 id="flight-delayed"
-                name="delayed"
               />
             </label>
           </div>

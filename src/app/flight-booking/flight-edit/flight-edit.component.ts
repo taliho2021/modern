@@ -5,7 +5,7 @@ import {
   linkedSignal,
   numberAttribute,
 } from '@angular/core';
-import { form, required, submit } from '@angular/forms/signals';
+import { Field, form, required, submit } from '@angular/forms/signals';
 
 import { Flight } from '../../model/flight';
 import { FlightDetailStore } from '../flight-detail.store';
@@ -19,6 +19,7 @@ import { toLocalDateTimeString } from '../../utils/date';
 @Component({
   selector: 'app-flight-edit',
   imports: [
+    Field,
     JsonPipe,
     MatDatepickerModule,
     MatInputModule,
